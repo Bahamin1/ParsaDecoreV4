@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Parsa Decor Content Schema",
+  "type": "object",
+  "properties": {
+    "hero": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 100 },
+        "tagline": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 500 },
+        "videoUrl": { "type": "string", "format": "uri" },
+        "backgroundImages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "maxItems": 10
+        }
+      },
+      "required": ["title", "tagline", "description", "backgroundImages"]
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string", "maxLength": 100 },
+          "description": { "type": "string", "maxLength": 300 },
+          "icon": { "type": "string" }
+        },
+        "required": ["id", "title", "description", "icon"]
+      }
+    },
+    "colorPalettes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "maxLength": 50 },
+          "colors": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "minItems": 2,
+            "maxItems": 8
+          },
+          "useCase": { "type": "string", "maxLength": 100 },
+          "description": { "type": "string", "maxLength": 200 }
+        },
+        "required": ["name", "colors", "useCase", "description"]
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string", "maxLength": 100 },
+          "category": {
+            "type": "string",
+            "enum": ["residential", "commercial", "small-rooms", "renovation"]
+          },
+          "description": { "type": "string", "maxLength": 500 },
+          "images": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "maxItems": 20
+          },
+          "materials": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "specs": {
+            "type": "object",
+            "properties": {
+              "area": { "type": "string" },
+              "duration": { "type": "string" },
+              "year": { "type": "string" }
+            },
+            "required": ["area", "duration", "year"]
+          }
+        },
+        "required": ["id", "title", "category", "description", "images", "materials", "specs"]
+      }
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": { "type": "string" },
+          "caption": { "type": "string", "maxLength": 200 }
+        },
+        "required": ["image", "caption"]
+      }
+    },
+    "about": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 100 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "team": { "type": "string", "maxLength": 500 },
+        "office": {
+          "type": "object",
+          "properties": {
+            "address": { "type": "string" },
+            "phone": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "hours": { "type": "string" }
+          },
+          "required": ["address", "phone", "email", "hours"]
+        }
+      },
+      "required": ["title", "description", "team", "office"]
+    }
+  },
+  "required": ["hero", "services", "colorPalettes", "projects", "gallery", "about"]
+}

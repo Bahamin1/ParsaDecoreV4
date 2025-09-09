@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "title": "Parsa Decor",
+    "tagline": "Interior Design and Decor",
+    "description": "Transforming spaces into extraordinary experiences with premium interior design solutions",
+    "videoUrl": "https://www.youtube.com/watch?v=NcX2dg_Rt5k",
+    "backgroundImages": [
+      "/images/1757441493990.jpeg",
+      "/images/1757441498117.jpg",
+      "/images/1757441503994.jpg"
+    ]
+  },
+  "services": [],
+  "colorPalettes": [
+    {
+      "name": "Warm Neutrals",
+      "colors": [
+        "#F5F5DC",
+        "#E6D7C3",
+        "#D2B48C",
+        "#CD853F"
+      ],
+      "useCase": "Living rooms, bedrooms",
+      "description": "Creates cozy, inviting atmospheres"
+    },
+    {
+      "name": "Cool Minimalist",
+      "colors": [
+        "#FFFFFF",
+        "#F8F9FA",
+        "#E9ECEF",
+        "#6C757D"
+      ],
+      "useCase": "Modern kitchens, offices",
+      "description": "Clean, sophisticated spaces"
+    },
+    {
+      "name": "Earth Tones",
+      "colors": [
+        "#8B4513",
+        "#A0522D",
+        "#DEB887",
+        "#F4A460"
+      ],
+      "useCase": "Dining rooms, studies",
+      "description": "Natural, grounding environments"
+    },
+    {
+      "name": "Luxury Accent",
+      "colors": [
+        "#2C3E50",
+        "#34495E",
+        "#BDC3C7",
+        "#ECF0F1"
+      ],
+      "useCase": "Feature walls, accents",
+      "description": "Elegant contrast elements"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1757442726761",
+      "title": "kale tokjmi project",
+      "category": "residential",
+      "description": "ye khuneye kiri ro tabdil kardim be khune",
+      "images": [
+        "/images/1757442774856.jpg",
+        "/images/1757442778295.webp",
+        "/images/1757442780174.webp",
+        "/images/1757442785594.png"
+      ],
+      "materials": [],
+      "specs": {
+        "area": "Beylik 01",
+        "duration": " 1month",
+        "year": "2025"
+      },
+      "client": "dr shalekus",
+      "location": "bahaminBey"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/1757442576359.jpeg",
+      "caption": "nevada coffe"
+    },
+    {
+      "image": "/images/1757442572352.jpeg",
+      "caption": "khuneye ahmad"
+    }
+  ],
+  "about": {
+    "title": "About Parsa Decor",
+    "description": "With over a decade of experience in interior design, Parsa Decor specializes in creating sophisticated, functional spaces that reflect our clients' unique personalities and lifestyles. Our team combines creativity with technical expertise to deliver exceptional results.",
+    "team": "Led by award-winning designer Parsa, our team brings together diverse talents in architecture, design, and project management.",
+    "office": {
+      "address": "123 Design District, Creative Quarter, City 12345",
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@parsadecor.com",
+      "hours": "Mon-Fri 9AM-6PM, Sat 10AM-4PM"
+    }
+  },
+  "portfolio": [
+    {
+      "id": "project-1757441643730",
+      "title": "new",
+      "category": "Commercial",
+      "description": "fogholade kiri o tokhmi ",
+      "images": [
+        "/images/1757441679085.jpeg",
+        "/images/1757441689963.jpg"
+      ],
+      "featured": true,
+      "completedDate": "2025-09-10",
+      "client": "DR.ghaz",
+      "location": "beylil"
+    }
+  ]
+}
